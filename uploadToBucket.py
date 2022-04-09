@@ -4,7 +4,7 @@ from botocore.exceptions import ClientError
 import os
 import glob
 
-images = glob.glob("/home/ec2-user/environment/images/*.jpg") + glob.glob("/home/ec2-user/environment/images/*.png")
+images = glob.glob("images/*.jpg") + glob.glob("images/*.png")
 FOLDER_NAME = "images/"
 s3_client = boto3.client('s3')
 
